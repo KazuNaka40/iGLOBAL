@@ -1,0 +1,215 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    font-weight:normal;
+}
+
+/* Set core root defaults */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+    filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/*ここから*/
+body{
+    background: #fcfbed;
+}
+
+.over_wrapper{
+    background-image:url("../data/1650014_m.jpg") ;
+    background-size:cover;
+    background-position: center;
+    margin-top: 60px;
+    height: 400px;
+    color: white;
+    position: relative;
+}
+
+.over_wrapper p{
+    position: absolute;
+    top: 50%; /*親要素を起点に上から50%*/
+    left: 50%;  /*親要素を起点に左から50%*/
+    transform: translateY(-50%) translateX(-50%); /*要素の大きさの半分ずつを戻す*/
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    font-size: 45px;
+
+}
+
+.wrapper{
+
+    width: 1000px;
+    margin:100px auto;
+
+    background:#ffffff;
+}
+
+.contents{
+    line-height:30px;
+
+    font-family:'メイリオ', 'Meiryo','ＭＳ ゴシック','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+.contents_top,.contents_middle{
+
+    padding:80px 70px 0px 70px;
+}
+
+h1{
+    padding-bottom:10px;
+    border-bottom:3px solid #47ad6b;
+    font-size: 24px;
+}
+.contents_middle h2{
+    padding-bottom:10px;
+    border-bottom:3px solid #47ad6b;
+
+    font-size: 24px;
+}
+.contents_top p{
+    padding:80px 40px;
+    font-size: 18px;
+}
+
+h3 {
+    padding:50px 60px 0 60px;
+    color: #1a7a40;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contents_middle p{
+    padding:20px 100px;
+    font-size: 18px;
+}
+
+.contact {
+    background-image:url("../data/3750204_s.jpg");
+    background-size:cover;
+    opacity: 0.8;
+    background-color: black;
+    margin-top: 60px;
+    height: 600px;
+    position: relative;
+}
+
+.contact:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3); /*半透明のフィルターをかける*/
+}
+
+
+.contact_inner{
+    padding:50px 60px;
+    position: absolute;
+    color: white;
+}
+
+.contact_inner h2{
+    padding-bottom: 10px;
+    font-size: 26px;
+    border-bottom: 2px solid white;
+}
+
+.contact_inner p{
+    margin:20px 0;
+}
+
+.contact_inner button{
+    margin-bottom:50px;
+    padding:20px 100px;
+    color: white;
+    font-size: 18px;
+    border:none;
+    border-radius: 3px;
+    background-color: #27b064;
+    cursor :pointer;
+}
+
+
+.contact_inner button:hover{
+    opacity: 0.8;
+}
+
+
